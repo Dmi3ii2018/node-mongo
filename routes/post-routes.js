@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router()
 const {getPost} = require('../controllers/post-controllers')
+const Post = require('../models/post');
+const createPath = require('../helpers/create-path')
 
 router.get('/posts/:id', getPost);
   
